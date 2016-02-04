@@ -9,8 +9,6 @@
 
 <h1>Products Documentation</h1>
 <p><a href="../../index.html#documentation">&laquo; Back to User Guide</a></p>
-<p><small>$Id: index.html 23028 2015-04-30 23:28:49Z jmfee $<br />
-$URL: https://ghttrac.cr.usgs.gov/websvn/ProductDistribution/trunk/etc/documentation/userguide/products/index.html $</small></p>
 
 
 <h2>Known Product Types</h2>
@@ -19,23 +17,25 @@ Distribution.</p>
 
 
 <ul>
-	<li><a href="dyfi.html">dyfi</a> (Did You Feel It?)</li>	
+	<li><a href="dyfi.html">dyfi</a> (Did You Feel It?)</li>
+	<li><a href="dyfi-trigger.html">dyfi-trigger</a>
+			(Did You Feel It? - Trigger)</li>
 	<li><a href="focal-mechanism.html">focal-mechanism</a></li>
 	<li><a href="link.html">general-link</a></li>
-	<li><a href="text.html">general-text</a></li>	
+	<li><a href="text.html">general-text</a></li>
 	<li><a href="geoserve.html">geoserve</a></li>
 	<li><a href="heartbeat.html">heartbeat</a></li>
 	<li><a href="link.html">impact-link</a></li>
-	<li><a href="text.html">impact-text</a></li>	
+	<li><a href="text.html">impact-text</a></li>
 	<li><a href="losspager.html">losspager</a></li>
 	<li><a href="moment-tensor.html">moment-tensor</a></li>
 	<li><a href="nearby-cities.html">nearby-cities</a></li>
 	<li><a href="origin.html">origin</a></li>
 	<li><a href="origin.html">phase-data</a></li>
 	<li><a href="link.html">scitech-link</a></li>
-	<li><a href="shakemap.html">shakemap</a></li>	
+	<li><a href="shakemap.html">shakemap</a></li>
 	<li><a href="significance.html">significance</a></li>
-	<li><a href="text.html">scitech-text</a></li>	
+	<li><a href="text.html">scitech-text</a></li>
 	<li><a href="tectonic-summary.html">tectonic-summary</a></li>
 </ul>
 
@@ -185,15 +185,15 @@ examples include <code>dyfi</code> number of responses, <code>losspager</code>
 alert level, and <code>shakemap</code> maximum MMI.</p>
 
 <h4>Product-Specific Properties</h4>
-<p>Products may have properties that are specific to that product type. For 
-example, the <i>origin</i> product has a custom <i>azimuthal-gap</i> property. 
-Like all product properties, these properties are set using name/value pairs, 
-using either command line Java parameters on a product send, or within a node 
+<p>Products may have properties that are specific to that product type. For
+example, the <i>origin</i> product has a custom <i>azimuthal-gap</i> property.
+Like all product properties, these properties are set using name/value pairs,
+using either command line Java parameters on a product send, or within a node
 of an XML file sent with the product.</p>
-<p>These properties aren't pre-configured using INI files like <i>config.ini</i>, 
-however they often need programmatic support, such as identifying which XML file 
-and node contains a custom property. For this reason, please contact 
-<a href="mailto:jmfee@usgs.gov">jmfee@usgs.gov</a> in advance before creating a 
+<p>These properties aren't pre-configured using INI files like <i>config.ini</i>,
+however they often need programmatic support, such as identifying which XML file
+and node contains a custom property. For this reason, please contact
+<a href="mailto:jmfee@usgs.gov">jmfee@usgs.gov</a> in advance before creating a
 new product type.</p>
 
 
